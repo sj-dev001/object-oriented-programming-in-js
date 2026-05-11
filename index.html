@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOJ Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero card">
+        <div>
+          <p class="eyebrow">Object-Oriented JavaScript</p>
+          <h1>Shopping Cart</h1>
+          <p class="hero-copy">
+            Create products, add them to a cart, and manage quantities with a clean OOJ approach.
+          </p>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat-label">Items in cart</span>
+            <strong id="cartItemCount">0</strong>
+          </div>
+          <div>
+            <span class="stat-label">Cart total</span>
+            <strong id="cartTotal">$0.00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <section class="card products-panel">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Catalog</p>
+              <h2>Available products</h2>
+            </div>
+          </div>
+          <div id="productsGrid" class="grid"></div>
+        </section>
+
+        <aside class="card cart-panel">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Your cart</p>
+              <h2>Shopping cart</h2>
+            </div>
+            <button id="clearCartBtn" class="ghost-btn" type="button">
+              <i class="fa-solid fa-trash-can"></i>
+              Clear
+            </button>
+          </div>
+
+          <div id="cartItems" class="cart-items"></div>
+
+          <div class="cart-footer">
+            <div>
+              <span class="stat-label">Total items</span>
+              <strong id="cartQuantity">0</strong>
+            </div>
+            <div>
+              <span class="stat-label">Total price</span>
+              <strong id="cartFooterTotal">$0.00</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
